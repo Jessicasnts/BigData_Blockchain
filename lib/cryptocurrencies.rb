@@ -13,7 +13,7 @@ puts my_hash.key(my_hash.values.min)
 
 puts "La ligne suivante montre les cryptos ayant une valeur inférieure à 6000"
 inf_a_6000 = my_hash.select {|k,v| v < 6000}
-puts inf_a_6000.keys
+print inf_a_6000.keys +" "
 
 puts "La ligne suivante montre la plus chère parmi celles dont le cours est inférieur à 6000"
 puts inf_a_6000.key(inf_a_6000.values.max)
